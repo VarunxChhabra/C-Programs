@@ -1,0 +1,51 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Ans 1 - There are two possible ways one by done using if-else statements and another is done by using switch case
+        By If else
+            if (month == 11)
+            {
+                printf("NOV");
+            }
+            else if (month == 12)
+            {
+                printf("DEC");
+            }
+           else 
+            {
+            }
+
+        By Switch and case
+            case 11:
+                {
+                    printf("\n*** Log date set! ***\n");
+                    printf("\nLog starting date: %d-NOV-01", year);
+                    flag = 1;
+                }
+            case 12:
+                {
+                    printf("\n*** Log date set! ***\n");
+                    printf("\nLog starting date: %d-DEC-01", year);
+                    flag = 1;
+                }
+                break; 
+
+Ans 2 - I had used two types of iteration in my code to validate the logic the first one is 
+"for" I used it because I have to run the loop for the user to enter the values of morning and evening ratings three times only
+"do-while" I used it because I have to run the loop once at least for the user to enter the value of year and month in the starting
+and at the end where the user has to enter the rating values, The code must go on if the user enters the wrong value for this I have
+to use the do-while loop.
+
+Ans 3 - I used local windows debugging for finding syntactic and semantic problems while doing the code I used Array in my code for
+the very first time and I want that array should have 3 values but I coded it as morning_ratings[2] i.e that it stores only two values
+ when I run this code it was showing the error and using debugging tool option I was able to break my code into pieces and found that
+ error and change to correct one that is morning_ratings[3] another when I forget to add .1 in front of lf and this syntax error was also corrected by using the Local windows 
+debugger. 

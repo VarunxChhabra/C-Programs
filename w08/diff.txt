@@ -1,0 +1,14 @@
+In line number 92 of your output:
+The output should be:
+SKU         $Price    Bag-lbs     Bag-kg     Bag-g Cal/Serv Servings  $/Serv   $/Cal
+     ^
+But your output is: 
+SKU  $Price Bag-lbs Bag-kg Bag-g Cal/Serv Servings $/Serv $/Cal
+     ^
+
+Unmatched character details:
+The character in column 6 is supposed to be:
+  [Space] ASCII code(32)
+but you printed
+  [$] ASCII code(36)
+

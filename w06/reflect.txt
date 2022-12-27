@@ -1,0 +1,45 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Ans 1 - We use parallel arrays to link data of the table containing Items, Priority, Financed, and cost.
+we use different arrays to take the value of each variable that was told in the output and then combine
+all the arrays by forming a for-loop in the code to make it run and show the exact value that was mentioned
+in different arrays one by one. The key for doing this is by forming a for loop in which the counter variable goes 
+through all the parallel arrays which was equal to 0 at the initial stage and then changes to 1,2,3 and so on
+till the list items.The combined code for parallel arrays is given below
+ 
+printf("\nItem Priority Financed        Cost\n");
+    printf("---- -------- -------- -----------\n");
+    for (counter = 0; counter < list_items; counter++)
+    {
+        printf("  %d      %d        %c    %11.2lf\n", item_no[counter], priority[counter], financing_option[counter], item_cost[counter]);
+}
+
+Ans 2 - This is because the value stored in arrays starts from 0, not from 1 if we start iteration with one the value
+of arrays that we going to print will not be printed for the value of the very first array i.e the value which is stored
+in array 0 will not be printed for example :-
+
+printf("\nItem Priority Financed        Cost\n");
+    printf("---- -------- -------- -----------\n");
+    for (counter = 0; counter < list_items; counter++)
+    {
+        printf("  %d      %d        %c    %11.2lf\n", item_no[counter], priority[counter], financing_option[counter], item_cost[counter]);
+}
+
+In this code, if I put counter = 1 then the value of all the arrays which is stored in 0 i.e the very first value stored 
+in each array will not be printed.
+
+Ans  3 - Array is a kind of variable where one can store the multiple values only in one variable by declaring how many 
+values that are going to store in an array this can be done without declaring another variable for storing the same kind of value
+for example, if you want to store student's names you don't need to declare the name variable with different names to store the name
+of students here, we can use an array instead. We can easily access the arrays by storing values at the time of declaration or by taking
+the user inputs for the same value by creating a loop.

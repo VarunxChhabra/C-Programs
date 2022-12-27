@@ -1,0 +1,24 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Ans 1 - "ReportData" structure minimally requires 60 bytes of data in memory. Bypassing the required value through 
+         the functions it only occupies 4 bytes instead of 60 bytes which makes the program effective as it consumes 
+         less memory it becomes faster and also become more convenient to understand.
+
+      Example - void displayReportData(const struct ReportData report, const int cheapest)
+
+Ans 2 - "ReportData" can be improved by putting the structure CatFoodInfo as an object in report data so that it becomes
+         easier to understand and we don't require to create another structure with the same objects that used in another
+         different structure.
+         for exmaple printf("%d",ReportData.CatFoodInfo.sku);
+         This command is used to print the value of sku which is stored in one structure Moreover, the value was stored in 
+         both ReportData and CatFoodInfo at once for two different structures.     

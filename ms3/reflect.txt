@@ -1,0 +1,50 @@
+/*
+*****************************************************************************
+                        Assignment 1 - Milestone 3
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+Email      : vchhabra1@myseneca.ca
+Section    : NGG
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+*/
+Ans 1 - The three functions which I have created for this milestone are 
+ 1)- void viewAllAppointments(struct ClinicData* data)
+ This function is used to list all the appointments of the patients that are scheduled in the system. This will list the list of the patients according to
+ the time and date at which the appointment is scheduled which also includes information regarding the patient number, name, phone number, and date and time 
+ of the appointment. Moreover, with the help of this function customers can view, reschedule or cancel their fixed appointments
+
+2)- void addAppointment(struct Appointment *appointments, int maxAppointments, struct Patient *patients, int maxPatient)
+ This function is used to add appointments for the patients first it will check through the array that the maximum number of
+ patients haven't reached yet if yes it shows the message that the time slot is not available and if yes it will ask for the details such as the
+ patient number and time slot there is a preferred time slot if the user didn't enter the time in preferred it shows the error message after that 
+ the program will check if the entered slot is available if yes it will book the appointment.
+
+3)- sortingAppoint(appointments, size)
+ This function is used to sort the list of appointments by checking the appointments array and sorting it in ascending order by checking the 
+ date and time of the appointment.
+
+Ans 2 - I use 90 lines of the code for the "addAppointment" function and it nearly saves more than hundreds of line after applying the pattern recognition
+ and different functions. The sections of different logic which I am able to consolidate into the function are listed below 
+ 
+1)- checkLeapYear(&appointments[size].date);
+ This function is used to validate that the date and time stored by the function "addAppointment" and if they are not valid it prompts the user to re-enter 
+ the value for taking an appointment. Moreover, it also checks whether the year mentioned in the date is a leap year or not if it is the leap year it adjusts the 
+ dates for the month of February accordingly.
+
+2)- size = calculateSizeOfAppointmentsArray(appointments, maxAppointments);
+ This function is used to check if there any space left in the appointment array for new appointments. This was not the complex one that need to consolidate into
+ the function. I did this so because it is used in many parts of the code.So, to make it comfortable for the reader and main the maintainability of the code I consolidate
+ it into the function.
+
+Ans 3 - I started this milestone after the class only on Tuesday only because somewhere in the back of my mind I know that it was going to be hard for this as I need to combine 
+        all the code and if I get an error I need to debug the whole code so divided my work on Tuesday only as there were 4 functions that I need to make and also 1 reflection 
+        So on Tuesday I went through all the basic and debug milestone 2 and prepare the plan for doing the further work. On Wednesday I devoted the night time to function 1 
+        "viewAllAppointments" function, which was quite easy for me and I did it at the same night I also started with the next function viewAppointmentSchedule and that was also I 
+         did it. However, it takes a longer time for me than usual which might be because I was checking each and every step again and again. On Thursday I started with the third and fourth
+         functions this is where I found trouble in writing the code. I got confused for leapyear function and in iterations too but somehow I managed it by asking help from my friends
+         for function 4 I found trouble in sorting for that I connected with my friends and we solved that error. It took me three days for completing the code on Sunday I did my reflection 
+         but when I debug the code on Sunday get an error in core.c in inputCharOption(const char str[]) function after analyzing the function I made it error-free within 30 mins.

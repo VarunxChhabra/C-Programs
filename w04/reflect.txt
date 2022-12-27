@@ -1,0 +1,173 @@
+*****************************************************************************
+                          Workshop - #4 (P2)
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+Email      : vchhabra1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1) It is important because it helps to run the code fast by skipping the conditions which do not match  
+   the condition is given by the user. 
+   The other reason is that it is much more human-readable and a different programmer can easily easily   
+   pick up the flow of code and can work on it.
+
+   Example 1 : if (number_of_cabbages < 0)
+        {
+            printf("ERROR: Value must be 0 or more.\n");
+        }
+        else
+            printf("\n");
+
+   It states that the number of cabbages is less than 0 and then shows the error otherwise print a new line
+
+   Example 2 : if (number_of_pears < 0)
+        {
+             printf("ERROR: Value must be 0 or more.\n");
+        }
+        else
+        printf("\n");
+ 
+   It states that the number of pears less than 0 then shows the error otherwise print a new line
+
+   Example 3 : if (entered_cabbages > number_of_cabbages)
+         {
+          printf("You picked too many... only %d more CABBAGE(S) are needed.\n", number_of_cabbages);
+         }
+         else if ((entered_cabbages < 0) || (number_of_cabbages == 0))
+         {
+          printf("ERROR: You must pick at least 1!\n");
+         }
+
+   It states that if entered cabbages are greater than the number of cabbages then show that you picked too  
+   many otherwise run the eels if condition in a similar way.
+
+2) Nested Construct means that there is a if condition inside a if condition. If the first if condition   
+   then only it will enter the nested if and run the code properly otherwise it will skip the whole nested  
+   if completely and then moves to else statement directly.
+
+
+
+Example 1: 
+
+if (number_of_cabbages != 0)
+                {
+                    do {
+                        printf("Pick some CABBAGES... how many did you pick? : ");
+                        scanf("%d", &entered_cabbages);
+
+                        if (entered_cabbages > number_of_cabbages)
+                        {
+                            printf("You picked too many... only %d more CABBAGE(S) are needed.\n", number_of_cabbages);
+                        }
+                        else if ((entered_cabbages < 0) || (number_of_cabbages == 0))
+                        {
+                            printf("ERROR: You must pick at least 1!\n");
+                        }
+                        else if (entered_cabbages < number_of_cabbages)
+                        {
+
+                            printf("Looks like we still need some CABBAGES...\n");
+                            number_of_cabbages -= entered_cabbages;
+                        }
+                        else if (entered_cabbages == number_of_cabbages)
+                        {
+                            printf("Great, that's the cabbages done!\n");
+                            number_of_cabbages -= entered_cabbages;
+                        }
+                        else
+                        {
+
+                        }
+                    } while (number_of_cabbages != 0);
+
+
+It is stating that if number of cabbages is greater than 0 then execute the do while loop and check if entered cabbages greater than number of cabbages and print You picked too many... only %d more CABBAGE(S) are needed. Otherwise enter the else if similarly till the condition match and if not then execute else one.
+
+
+Example 2 : 
+
+
+
+if (number_of_tomatoes != 0)
+                {
+                    do {
+                        printf("Pick some TOMATOES... how many did you pick? : ");
+                        scanf("%d", &entered_tomatoes);
+
+                        if (entered_tomatoes > number_of_tomatoes)
+                        {
+                            printf("You picked too many... only %d more TOMATO(ES)) are needed.\n", number_of_tomatoes);
+                        }
+                        else if ((entered_tomatoes < 0) || (number_of_tomatoes == 0))
+                        {
+                            printf("ERROR: You must pick at least 1!\n");
+                        }
+                        else if (entered_tomatoes < number_of_tomatoes)
+                        {
+
+                            printf("Looks like we still need some TOMATOES...\n");
+                            number_of_tomatoes -= entered_tomatoes;
+                        }
+                        else if (entered_tomatoes == number_of_tomatoes)
+                        {
+                            printf("Great, that's the tomatoes done!\n");
+                            number_of_tomatoes -= entered_tomatoes;
+                        }
+                        else
+                        {
+
+                        }
+                    } while (number_of_tomatoes != 0);
+
+
+
+It is stating that if number of tomatoes is greater than 0 then execute the do while loop and check if entered tomatoes greater than number of tomatoes
+and print You picked too many... only %d more TOMATO(ES)) are needed. Otherwise enter the else if similarly till the condition match and if not then execute else one.
+
+
+3) My favorite iteration construct is do while loop because it will execute the code ones even if the   
+   condition is false. The other reason is that it is much easier to understand the code and keep    
+   track of what's going on in the algorithm/code. 
+   
+   If we compare it to while the syntax is much similar but it doesn't execute the code ones and stops 
+   If the condition is false and moves on to the next part of the code
+   
+   Although for loop is much more compact in writing it sometimes becomes overwhelming to know the flow of the code.
+
+
+
+Example :
+
+    
+           do {
+                        printf("Pick some ORANGES... how many did you pick? : ");
+                        scanf("%d", &entered_oranges);
+
+                        if (entered_oranges > number_of_oranges)
+                        {
+                            printf("You picked too many... only %d more ORANGE(S) are needed.\n",  
+                            number_of_oranges);
+                        }
+                        else if ((entered_oranges < 0) && (entered_oranges == 0))
+                        {
+                            printf("ERROR: You must pick at least 1!\n");
+                        }
+                        else if (entered_oranges < number_of_oranges)
+                        {
+                            printf("Looks like we still need some ORANGES...\n");
+                            number_of_oranges -= entered_oranges;
+                        }
+                        else if (entered_oranges == number_of_oranges)
+                        {
+                            printf("Great, that's the oranges done!\n");
+                            number_of_oranges -= entered_oranges;
+                        }
+                        else
+                        {
+                        }
+                 } while (number_of_oranges != 0);

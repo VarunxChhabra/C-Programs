@@ -1,0 +1,29 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+Email      : vchhabra1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Ans 1- I had learned some new things about the C language in this starting week such as how to print the 
+output of characters and special characters by using printf command and "\" in front of special characters.
+Second, the use of tab command(\t) that is used to shift some spaces in the output of code without using 
+the spacebar key in writing the input of the code.Lastly, is the use "\n" which is used to shift the output
+to the next line or this can also be used to leave one line and this helps me in writing a simple C program.
+
+Ans 2- SSH means the Secured Shell Protocol it is used to create a secured environment from a remote server
+where the data is shared by the users and is not accessible to everyone.Like, we have used puTTY to submit
+the assignments to our respectable professors and those assignments are only accessible to our professor 
+and will remain on the server only.
+
+Ans 3- SFTP again is a type of protocol used to transfer the files securely. We are using winSCP for transferring
+our ".c" file to puTTY which is a secured remote server and from there we share our work with our professors 
+
+
+ 

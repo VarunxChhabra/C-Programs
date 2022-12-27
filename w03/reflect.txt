@@ -1,0 +1,38 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Varun Chhabra	
+Student ID#: 170279210
+Email      : vchhabra1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Ans 1 - I found this equation to be most difficult in this code, 
+(number_of_daily_serving >= 1) && (number_of_daily_serving <= 4) && (bag_size_for_coffee_1 >= 0) && (bag_size_for_coffee_1 <= 250)
+because I was applying or (||) logic in this code however I was not getting my desired output and then I realized that it should be the and (&&)
+function then I apply this and able understand the correct logic as well as I got the correct answers.
+
+Ans 2 - by "deMorgan's Law"
+(coffee_1_type == 'L') || (coffee_1_type =='l');
+
+Without "deMorgan's Law"
+coffee_1_type == ('L' || 'l');
+
+by if-else   
+if (coffee_1_type == 'L' || coffee_1_type == 'l') 
+	{
+		printf("1");
+	}
+	else
+	{
+		printf("0");
+	} 
+
+Ans 3 - If we add a variable in the code it will consume more space and makes the code slow as the compiler took more time to read new variables
+and its user value inputs. In part -2 of this workshop there are 20 variables, to make this code run smoothly and efficiently we didn't create another
+variable in part -2 but in part -1 there are restricted and fewer variables available so it doesn't affect the code if we created it. Moreover, a code will 
+look like a mess if we use extra variables for simple in-line calculations.

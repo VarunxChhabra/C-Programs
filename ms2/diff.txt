@@ -1,0 +1,14 @@
+In line number 165 of your output:
+The output should be:
+Name  : Horsey Henry
+        ^
+But your output is: 
+Name  : 4
+        ^
+
+Unmatched character details:
+The character in column 9 is supposed to be:
+  [H] ASCII code(72)
+but you printed
+  [4] ASCII code(52)
+

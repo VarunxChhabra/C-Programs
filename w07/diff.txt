@@ -1,0 +1,14 @@
+In line number 176 of your output:
+The output should be:
+#   Game over!   #
+  ^
+But your output is: 
+# Game over! #
+  ^
+
+Unmatched character details:
+The character in column 3 is supposed to be:
+  [Space] ASCII code(32)
+but you printed
+  [G] ASCII code(71)
+

@@ -1,0 +1,52 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Varun Chhabra
+Student ID#: 170279210
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Ans1 Using structure results in reducing the complexity and the size of the code by using structure one can easily save his or her
+     time because we don't need to declare the variable of the same type at each time in the code by using the structure we can
+     group it in the one main variable. For example, we have used structure in our code for storing the player and game information
+     
+struct PlayerInfo
+{
+    char character_symbol;
+    int number_of_lives;
+    int Treasure;
+    int Player_History[Max_Length];
+};
+struct game
+{
+    int path_length;
+    int number_of_moves;
+    int Bomb_location[Max_Length];
+    int Treasure_location[Max_Length];
+};
+
+int main(void)
+{
+    int counter1, counter2;
+    int min = 3;
+    int max = 26;
+    int flag1 = 0;
+    int flag2 = 0;
+    int nextmove = 0;
+    struct PlayerInfo player;
+    struct game playergame;
+    player.Treasure = 0;
+   
+
+Ans 2 For this I will first create two different variables in which one is used to record the history of the results and another is used
+      is used to keep the end game result and this is how we can get the required output.
+
+Ans 3 In this workshop I found whole code for part 2 was quite difficult for me at the first sight when I see the code I was able to figure 
+      out what we gonna do in this but when I start applying logic to my code it starts giving me a lot of errors in printing the desired output
+      So, for overcoming this problem I re-attend my lecture, and go through the weekly readings, take some help from my friends..this help me in 
+      understanding the logic however it was tough challenge for me to  complete it before the deadline but it has increased my logical thinking
+      capacity to a greater extent
